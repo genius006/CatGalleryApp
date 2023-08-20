@@ -30,8 +30,13 @@
       </div>
   </main>
   <footer>
-    <p>&copy; 2023 Cat Gallery App. All rights reserved.</p>
+    <p>&copy; <span id="currentYear"></span> Cat Gallery App. All rights reserved.</p>
   </footer>
+
+  <script>
+    const currYear = new Date().getFullYear();
+    document.getElementById("currentYear").textContent = currYear;
+  </script>
 </body>
 
 </html>
